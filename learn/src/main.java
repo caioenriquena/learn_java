@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class main {
     public static void main(String[] args) {
         /*verifica a condição e depois executa
@@ -13,7 +15,7 @@ public class main {
         do {
             System.out.println("minha idade começou de  :" + idade2);
             idade2 ++;
-        } while (idade2 <= 60); */
+        } while (idade2 <= 60);
 
 
         // exercicios com for
@@ -23,7 +25,7 @@ public class main {
         // Escreva um programa em Java que imprima os números de 1 a 100, um por linha.
 
 
-        for (int i = 0; i <= 100 ; i++)  {
+        /for (int i = 0; i <= 100; i++) {
             System.out.println("os numeros de 1  a 100 sao : " + i);
         }
 
@@ -31,8 +33,8 @@ public class main {
 
         // Escreva um programa em Java que imprima os números pares de 1 a 100, um por linha.
 
-        for (int i = 0; i <= 100 ; i++) {
-            if (i % 2 ==0){
+        for (int i = 0; i <= 100; i++) {
+            if (i % 2 == 0) {
                 System.out.println("os numeros pares de 1 a 100 sao :" + i);
             }
         }
@@ -41,8 +43,8 @@ public class main {
 
         // Escreva um programa em Java que imprima a soma dos números de 1 a 100.
         int soma = 0;
-        for (int i = 1; i <= 100; i++  ){
-            soma  += i;
+        for (int i = 1; i <= 100; i++) {
+            soma += i;
             {
                 System.out.println(" a soma dos valores de  1 a 100 é : " + soma);
             }
@@ -61,7 +63,13 @@ public class main {
 
             if (primo) {
                 System.out.println(i);
+
             }
-        }
+        }*/
+        // entrada de dados com java OPTION PANE
+
+        String nome = JOptionPane.showInputDialog("Qual o seu nome?");
+
+        System.out.println(" meu nome é : " + nome);
     }
 }
