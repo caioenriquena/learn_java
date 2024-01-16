@@ -1,20 +1,22 @@
-import javax.swing.*;
 import java.util.Scanner;
 
-public class main {
+public class ex2 {
+
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
 
-        if  (N<0){
-            System.out.println("NEGATIVO");
 
+        if (N%2 == 0) {
+            System.out.println("Número Par");
         }
         else {
-            System.out.println("Positivo");
+            System.out.println("Impar");
         }
 
 
         sc.close();
+
     }
 }
