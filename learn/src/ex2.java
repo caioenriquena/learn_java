@@ -5,18 +5,26 @@ public class ex2 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
+
+        int n = sc.nextInt();
 
 
-        if (N%2 == 0) {
-            System.out.println("Número Par");
+
+        for (int i = 0; i < n; i++) {
+
+            int x   = sc.nextInt();
+
+            if (x >= 10 && x <=20){
+                System.out.println(x + " " + "in");
+            }else {
+                System.out.println(x +  " " +   "out");
+            }
+
         }
-        else {
-            System.out.println("Impar");
-        }
+
+
 
 
         sc.close();
-
     }
 }
