@@ -32,4 +32,12 @@ public abstract class Animal {
         JOptionPane.showMessageDialog(null,"Eu emito som");
     }
 
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                '}';
+    }
 }
