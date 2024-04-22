@@ -4,20 +4,24 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        Gato gato1 = new Gato("MISOO",3);
-        JOptionPane.showMessageDialog(null,"Gato : " + gato1.getNome());
-        gato1.correr();
-        gato1.emitirSom();
 
-        Cachorro dog = new Cachorro("Luckinho", 4);
-        JOptionPane.showMessageDialog(null,"Cachorro : " + dog.getNome());
-        dog.emitirSom();
-        dog.correr();
+        Animal c1 = new Cachorro("Luck",20);
+        c1.emitirSom();
+        ((Cachorro)c1).correr();
 
-        Passarinho passaro1 = new Passarinho("Bem-te-vi",2);
-        JOptionPane.showMessageDialog(null,"Pássaro : " + passaro1.getNome());
-        passaro1.emitirSom();
-        passaro1.correr();
-        passaro1.voando();
+        Animal g1 = new Gato("Misoo",20);
+        g1.emitirSom();
+        ((Gato)g1).correr();
+
+        Animal p1 = new Passarinho("pau-de-arara",100);
+        p1.emitirSom();
+        ((Passarinho)p1).voando();
+
+
+
+
+
+
     }
+
 }
