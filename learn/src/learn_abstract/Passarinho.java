@@ -3,8 +3,8 @@ package learn_abstract;
 import javax.swing.*;
 
 public class Passarinho extends Animal implements Corrida , Voar{
-    public Passarinho(String nome, int idade) {
-        super(nome, idade);
+    public Passarinho(String nome, int idade, tipoAnimal tipo) {
+        super(nome, idade, tipo);
     }
 
     @Override
@@ -20,4 +20,6 @@ public class Passarinho extends Animal implements Corrida , Voar{
     public void voando(){
         JOptionPane.showMessageDialog(null,"Voando alto !!");
     }
+    @Override
+    public  void comer(){JOptionPane.showMessageDialog(null,"Comendo ~~~~ >>> piu piu!");}
 }
