@@ -27,7 +27,7 @@ public class Main {
         t.fazerComer(c2);
 
         t.praticarVoo(new Passarinho("voavoarvou",20,tipoAnimal.AVE));
-        t.
+
     }
 
 }
